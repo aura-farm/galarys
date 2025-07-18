@@ -1,2 +1,108 @@
 # galarys
 A beautiful photo gallery from Aura Farm  My first website using GitHub Pages  Simple HTML image gallery project  Gallery project for sharing nature images
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aura Farm Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background-color: #4CAF50;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .intro {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .button {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      color: #555;
+      background-color: #f0f0f0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aura Farm Gallery</h1>
+  </header>
+
+  <div class="intro">
+    <p>Welcome to our digital gallery – a space to explore beauty from Aura Farm. Enjoy the journey!</p>
+    <a href="https://aura-farm.github.io/galarys/" class="button">Visit Full Gallery</a>
+  </div>
+
+  <div class="gallery">
+    <!-- Replace these image URLs with your own images -->
+    <img src="https://placekitten.com/400/300" alt="Sample 1" />
+    <img src="https://placehold.co/400x300" alt="Sample 2" />
+    <img src="https://picsum.photos/400/300?random=3" alt="Sample 3" />
+    <img src="https://picsum.photos/400/300?random=4" alt="Sample 4" />
+  </div>
+
+  <footer>
+    <p><strong>Galarys</strong></p>
+    <p>A beautiful photo gallery from Aura Farm</p>
+    <p>My first website using GitHub Pages</p>
+    <p>Simple HTML image gallery project for sharing nature images</p>
+    <p>This site is open source. Improve this page.</p>
+  </footer>
+
+</body>
+</html>
